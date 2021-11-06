@@ -69,6 +69,26 @@ int main(){
         cout << "No puedes votar" << endl;
     }
 
+    //switch case
+    int opcion = 0;
+    cout << "ingresa un numero del 1 al 3" << endl;
+    cin >> opcion;
 
+    switch (opcion)
+    {
+    case 1:
+        cout << "usted ingresó 1" << endl;
+        break;
+    case 2:
+        cout << "usted ingresó 2" << endl;
+        break;
+
+    case 3:
+        cout << "usted ingresó 2" << endl;
+        break;    
+    default:
+        cout << "El numero que ingresó no es valido" << endl;
+        break;
+    }
 
 } 
