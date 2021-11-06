@@ -1,9 +1,11 @@
 #include <iostream>
+#include <string>
 
 //espacio de nombres estandar
 using namespace std;
 
-int suma (int a, int b){
+//declaración funcion
+int suma (int a, int b=8){
     return a+b;
 }
 
@@ -112,7 +114,7 @@ int main(){
     for (;;){//while (true)
         cout << "desea continuar (s/n)" << endl;
         cin >> continuar;
-        if (toupper(continuar)=='S'){
+        if (toupper(continuar)=='N'){
             break;
         }
         cout << "aún no me detengo" << endl; 
@@ -124,8 +126,18 @@ int main(){
         cout << "me ejecuté" << endl; 
     }while (i!=1);
 
+    //uso de función
     cout << "resultado función: " << suma(2,2) << endl;
+    cout << "resultado función: " << suma(2) << endl;
 
+
+    //manejo de strings
+    string texto= "Hola mundo";
+    cout << "Hola mundo tiene: " << texto.size() << endl;
+
+    string numero= "10.5";
+    cout << stof(numero)+1 << endl;
+    
 } 
 
 
