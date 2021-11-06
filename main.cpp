@@ -91,4 +91,16 @@ int main(){
         break;
     }
 
+
+
+    // ciclos
+
+    for (int i=0;i<sizeof(lista_edades)/sizeof(lista_edades[0]);i++){
+        if (lista_edades[i]==6){
+            break;
+        }
+        cout << lista_edades[i] << endl;
+    }
+
+
 } 
