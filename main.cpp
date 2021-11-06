@@ -49,9 +49,25 @@ int main(){
 
 
     //entrada y salida de datos
-    cout << "introduce tu edad:" << endl;
+    cout << "introduce tu edad entre 18 y 35:" << endl;
     cin >> edad;
     cout << "tu edad es: " << edad << endl;
+
+
+
+    //condicionales
+    int edad_limite = 40;
+    bool resultado = edad >= 18 &&  !(edad >edad_limite);
+
+    if (resultado){
+        cout << "Puedes votar" << endl;
+    }
+    else if (edad >80){
+        cout << "Usted está muy viejo" << endl;
+    }
+    else {
+        cout << "No puedes votar" << endl;
+    }
 
 
 
