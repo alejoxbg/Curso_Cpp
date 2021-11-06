@@ -48,6 +48,11 @@ int main(){
     cout << sizeof(lista_edades)/ sizeof(a) << endl;
 
 
+    //entrada y salida de datos
+    cout << "introduce tu edad:" << endl;
+    cin >> edad;
+    cout << "tu edad es: " << edad << endl;
+
 
 
 } 
