@@ -3,6 +3,10 @@
 //espacio de nombres estandar
 using namespace std;
 
+int suma (int a, int b){
+    return a+b;
+}
+
 //función main, todos los codigos deben tener una, todos los programas comienzan en esta funcion
 int main(){
     cout << "Hola mundo" << endl;
@@ -104,7 +108,7 @@ int main(){
 
 
     //ciclos while y dowhile
-    char continuar = 'S';
+    char continuar = 'n';
     for (;;){//while (true)
         cout << "desea continuar (s/n)" << endl;
         cin >> continuar;
@@ -120,6 +124,8 @@ int main(){
         cout << "me ejecuté" << endl; 
     }while (i!=1);
 
-
+    cout << "resultado función: " << suma(2,2) << endl;
 
 } 
+
+
