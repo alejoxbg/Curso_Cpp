@@ -95,12 +95,31 @@ int main(){
 
     // ciclos
 
-    for (int i=0;i<sizeof(lista_edades)/sizeof(lista_edades[0]);i++){
+    for (int i=0;i < (sizeof(lista_edades)/sizeof(lista_edades[0]));i++){
         if (lista_edades[i]==6){
             break;
         }
         cout << lista_edades[i] << endl;
     }
+
+
+    //ciclos while y dowhile
+    char continuar = 'S';
+    for (;;){//while (true)
+        cout << "desea continuar (s/n)" << endl;
+        cin >> continuar;
+        if (toupper(continuar)=='S'){
+            break;
+        }
+        cout << "aún no me detengo" << endl; 
+
+    }  
+    cout << "ya me detuve" << endl; 
+    int i = 1;
+    do {
+        cout << "me ejecuté" << endl; 
+    }while (i!=1);
+
 
 
 } 
